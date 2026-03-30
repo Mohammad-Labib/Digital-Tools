@@ -2,6 +2,7 @@
 import { Suspense } from 'react'
 import './App.css'
 import NavaBar from './components/NavaBar/NavaBar'
+import HeroBanner from './components/HerroBanner/HeroBanner'
 
 
 function App() {
@@ -13,6 +14,11 @@ function App() {
       <NavaBar>
         
       </NavaBar>
+     </Suspense>
+
+     {/* hero-Part */}
+     <Suspense>
+      <HeroBanner></HeroBanner>
      </Suspense>
     </>
   )
