@@ -4,6 +4,7 @@ import './App.css'
 import NavaBar from './components/NavaBar/NavaBar'
 import HeroBanner from './components/HerroBanner/HeroBanner'
 import Footer from './components/footer/Footer'
+import ReadyTrans from './components/ReadyTrans/ReadyTrans'
 
 
 
@@ -22,8 +23,10 @@ function App() {
       <HeroBanner></HeroBanner>
       
      </Suspense>
-   
+     
+     <ReadyTrans></ReadyTrans>
      <Footer></Footer>
+   
     </>
   )
 }
