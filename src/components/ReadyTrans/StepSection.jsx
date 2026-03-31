@@ -1,5 +1,7 @@
 import React from 'react';
 import UserImg from "../../assets/user.png"
+// import RocketImg from "../../assets/rockt.png"
+// import PackageImg from "../../assets/packag.png"
 const StepSection = () => {
     return (
         <>

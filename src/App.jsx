@@ -7,16 +7,22 @@ import Footer from './components/footer/Footer'
 import ReadyTrans from './components/ReadyTrans/ReadyTrans'
 import SimpleTrans from './components/ReadyTrans/SimpleTrans'
 import StepSection from './components/ReadyTrans/StepSection'
+import Cards from './components/cards/Cards'
 
 
 
+
+const fetchProducts = async () => {
+  const res = await fetch("/Products.json");
+  return res.json();
+}
 
 function App() {
-
+const productPromise = fetchProducts();
 
   return (
     <>
-     <Suspense fallback={<span className="loading loading-dots loading-xl">Loading...</span>}>
+     <Suspense>
       <NavaBar> </NavaBar>
      </Suspense>
 
@@ -25,6 +31,11 @@ function App() {
       <HeroBanner></HeroBanner>
       
      </Suspense>
+
+    <Suspense fallback={<span className="loading loading-dots loading-xl"></span>}>
+      <Cards productPromise={productPromise}></Cards>
+    </Suspense>
+
 
      <StepSection></StepSection>
      <SimpleTrans></SimpleTrans>
