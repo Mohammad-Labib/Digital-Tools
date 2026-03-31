@@ -1,0 +1,112 @@
+const products = [
+  {
+    id: 1,
+    name: "Starter Resume Kit",
+    description: "Perfect for beginners to create professional resumes.",
+    price: 0,
+    period: "one-time",
+    tag: "new",
+    tagType: "new",
+    features: ["10+ templates", "Basic customization", "Export to PDF"],
+    icon: "FaFileAlt"
+  },
+  {
+    id: 2,
+    name: "Pro Resume Builder",
+    description: "Advanced resume builder with ATS optimization.",
+    price: 9.99,
+    period: "monthly",
+    tag: "popular",
+    tagType: "popular",
+    features: ["100+ templates", "ATS optimization", "Cover letter builder"],
+    icon: "FaUserTie"
+  },
+  {
+    id: 3,
+    name: "Career Boost Plan",
+    description: "All-in-one solution to land your dream job.",
+    price: 49.99,
+    period: "yearly",
+    tag: "best seller",
+    tagType: "best seller",
+    features: ["Unlimited resumes", "LinkedIn optimization", "Priority support"],
+    icon: "FaRocket"
+  },
+  {
+    id: 4,
+    name: "Portfolio Builder",
+    description: "Create stunning personal portfolios.",
+    price: 5.99,
+    period: "monthly",
+    tag: "new",
+    tagType: "new",
+    features: ["Custom domains", "Drag & drop builder", "SEO optimized"],
+    icon: "FaGlobe"
+  },
+  {
+    id: 5,
+    name: "Interview Prep Pack",
+    description: "Get ready for interviews with confidence.",
+    price: 19.99,
+    period: "one-time",
+    tag: "popular",
+    tagType: "popular",
+    features: ["Mock interviews", "Common Q&A", "Expert tips"],
+    icon: "FaComments"
+  },
+  {
+    id: 6,
+    name: "Freelancer Toolkit",
+    description: "Everything you need to start freelancing.",
+    price: 29.99,
+    period: "yearly",
+    tag: "best seller",
+    tagType: "best seller",
+    features: ["Proposal templates", "Client tracker", "Invoice generator"],
+    icon: "FaLaptopCode"
+  },
+  {
+    id: 7,
+    name: "AI Resume Writer",
+    description: "Generate resumes instantly using AI.",
+    price: 14.99,
+    period: "monthly",
+    tag: "popular",
+    tagType: "popular",
+    features: ["AI suggestions", "Keyword optimization", "Auto formatting"],
+    icon: "FaRobot"
+  },
+  {
+    id: 8,
+    name: "Job Tracker Pro",
+    description: "Track all your job applications.",
+    price: 7.99,
+    period: "monthly",
+    tag: "new",
+    tagType: "new",
+    features: ["Application tracking", "Status updates", "Reminders"],
+    icon: "FaTasks"
+  },
+  {
+    id: 9,
+    name: "Ultimate Career Pack",
+    description: "Complete package for career growth.",
+    price: 99.99,
+    period: "yearly",
+    tag: "best seller",
+    tagType: "best seller",
+    features: ["All features included", "1-on-1 coaching", "Premium templates"],
+    icon: "FaCrown"
+  },
+  {
+    id: 10,
+    name: "Cover Letter Generator",
+    description: "Create professional cover letters instantly.",
+    price: 4.99,
+    period: "one-time",
+    tag: "popular",
+    tagType: "popular",
+    features: ["50+ templates", "AI writing", "Easy export"],
+    icon: "FaEnvelopeOpenText"
+  }
+];
