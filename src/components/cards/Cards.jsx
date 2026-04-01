@@ -58,6 +58,7 @@ const Cards = ({ productPromise, setShopNow }) => {
           <h2 className="text-center text-xl font-semibold">
             {<MiniCart 
             MiniThisCarts={MiniThisCarts}
+            setMiniThisCarts={setMiniThisCarts}
             >
             </MiniCart>}
           </h2>
