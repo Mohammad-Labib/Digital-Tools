@@ -42,7 +42,7 @@ const CardtFix = ({onlyCard}) => {
 
     </ul>
     <div className="">
-      <button className="btn btn-primary rounded-full text-xl bg-gradient-to-r from-indigo-500 to-purple-500 btn-block">Subscribe</button>
+      <button className="btn btn-primary rounded-full text-xl bg-gradient-to-r from-indigo-500 to-purple-500 btn-block">Buy Now</button>
     </div>
   </div>
 </div>

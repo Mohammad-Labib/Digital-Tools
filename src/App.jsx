@@ -42,6 +42,9 @@ const productPromise = fetchProducts();
      <ReadyTrans></ReadyTrans>
      <Footer></Footer>
    
+
+   {/* Tostify-install */}
+     {/* <ToastContainer /> */}
     </>
   )
 }
