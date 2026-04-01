@@ -1,5 +1,5 @@
 
-import { Suspense } from 'react'
+import { Suspense, useState } from 'react'
 import './App.css'
 import NavaBar from './components/NavaBar/NavaBar'
 import HeroBanner from './components/HerroBanner/HeroBanner'
@@ -19,11 +19,11 @@ const fetchProducts = async () => {
 
 function App() {
 const productPromise = fetchProducts();
-
+const [shopNow, setShopNow] = useState(0)
   return (
     <>
      <Suspense>
-      <NavaBar> </NavaBar>
+      <NavaBar shopNow={shopNow}> </NavaBar>
      </Suspense>
 
      {/* hero-Part */}
@@ -33,7 +33,11 @@ const productPromise = fetchProducts();
      </Suspense>
 
     <Suspense fallback={<span className="loading loading-dots loading-xl"></span>}>
-      <Cards productPromise={productPromise}></Cards>
+      <Cards productPromise={productPromise} 
+      setShopNow={setShopNow}
+
+      >
+      </Cards>
     </Suspense>
 
 

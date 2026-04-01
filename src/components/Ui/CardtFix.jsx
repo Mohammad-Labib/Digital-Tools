@@ -1,7 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { MdOutlineDone } from 'react-icons/md';
 
-const CardtFix = ({onlyCard}) => {
+const CardtFix = ({onlyCard, setShopNow, setMiniThisCarts, MiniThisCarts}) => {
+
+  const [isBuyNow, setIsBuyNow] = useState(false);
+  const handleCountCart = () =>
+     { setIsBuyNow(true); 
+      setShopNow(prev => prev + 1)
+
+    setMiniThisCarts([...MiniThisCarts, onlyCard])
+    };
+
+
     return (
          <div className="card w-96 bg-base-100 shadow-sm mt-6">
   <div className="card-body space-y-4">
@@ -41,9 +51,17 @@ const CardtFix = ({onlyCard}) => {
 
 
     </ul>
-    <div className="">
-      <button className="btn btn-primary rounded-full text-xl bg-gradient-to-r from-indigo-500 to-purple-500 btn-block">Buy Now</button>
-    </div>
+    <div>
+  <button 
+    onClick={handleCountCart}
+    className={`btn rounded-full text-xl btn-block ${
+          isBuyNow
+            ? "bg-gradient-to-r from-orange-500 to-green-500 text-white"  : "bg-gradient-to-r from-indigo-500 to-purple-500 text-white" }`}>
+
+          {isBuyNow ? "Selected" : "Buy Now"}
+  </button>
+</div>
+
   </div>
 </div>
     );
